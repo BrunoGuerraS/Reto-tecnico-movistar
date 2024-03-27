@@ -8,3 +8,5 @@ Se genera un un script en base a la libreria beautifulsoup para el consumo de lo
 Para iniciar el proyecto, asegúrate de tener Python 3 instalado en tu sistema. Luego, clona este repositorio y navega hasta el directorio del proyecto:
 
 ```bash
+git clone git@github.com:BrunoGuerraS/Reto-tecnico-movistar.git
+cd Reto-tecnico-movistar
