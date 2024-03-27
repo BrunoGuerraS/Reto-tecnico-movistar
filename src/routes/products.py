@@ -12,6 +12,8 @@ def get_product():
             return jsonify(scraped_products), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
+
 # @products.route("/products")
 # def get_product():
 #     return render_template("products.html", name="products")
@@ -22,11 +24,6 @@ def get_products(id):
     return f"Hello product {id}"
 
 
-@products.route("/products", methods=["POST"])
-def post_product():
-    return "Product created"
-
-
 @products.route("/products/<int:id>", methods=["PUT"])
 def put_product(id):
     return f"Product {id} updated"
@@ -34,5 +31,4 @@ def put_product(id):
 
 @products.route("/products/<int:id>", methods=["DELETE"])
 def delete_product(id):
-    return f"Product {id} deleted"
     return f"Product {id} deleted"
